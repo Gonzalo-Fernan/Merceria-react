@@ -1,42 +1,193 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainConteiner{
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/fondo-merce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+/*---------NAV-BAR-----------*/
+
+
+.navbar{
+  color: rgb(255, 255, 255);
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.logo{
+  padding: 5px;
+  transition: .4s;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logo:hover{
+  cursor: pointer;
+  transform: scale(1.13);
+}
+.linkList{
+  font-family: montserrat;
+  font-weight: bold;
+}
+.nav-element{
+  padding: 10px;
+}
+.nav-element:hover{
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #00000071;
+  transition: all .3s;
+  transform: scale(1.1);
+}
+.cartConteiner{
+  transition: .2s;
+}
+.cartConteiner:hover{
+  border-radius: 15px;
+  padding: 4px;
+  background-color: #0000004d;
+  transform: scale(1.11);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/*--------MAIN (ProductList)----------*/
+
+.listTitle{
+  font-family: montserrat;
+}
+.imagenProducto{
+  object-fit: contain;
+  width: 80%;
+  height: 70%;
+  border-radius: 10px 10px 0px 0px;
+}
+.cardConteiner{
+  border-radius: 15px;
+  transition: .3s;
+}
+.cardConteiner:hover{
+  transform: scale(1.2);
+  background-color: #000000a1;
+}
+.productConteiner{
+  margin: 50  px;
+}
+
+/*------ FOOTER ------ */
+
+.footerConteiner{
+  background-color: #000000b2;
+}
+
+/*--------MediaQuerys------*/
+ 
+@media screen and (max-width: 1400px){
+  .linkList{
+    gap: 5px;
+    margin-right: -15px;
   }
-  to {
-    transform: rotate(360deg);
+} 
+@media screen and (max-width: 1200px){
+  .productConteiner{
+    margin: 100px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+} 
+@media screen and (max-width: 1120px){
+  .logo{
+    display: inline-block;
   }
-}
+  .logo img{
+    margin-left: 60px;
+    margin-bottom: -30px;
+  }
+} 
+@media screen and (max-width: 1050px){
+ .linkList{
+  flex-direction: column;
+ }
+ .logo{
+  margin-top: -190px;
+ }
+ .productList{
+  margin-top: -90px;
+  display: grid;
+  grid-template-columns: auto auto;
+ }
+ .listTitle{
+  margin-top: -220px;
+  margin-bottom: 150px;
+ }
 
-.card {
-  padding: 2em;
+} 
+@media screen and (max-width: 850px){
+.navbar{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000071;
 }
+.linkList{
+  margin-top: 30px;
+  flex-direction: row;
+  font-size: 20px;  
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.logo img{
+  margin-right: 45px;
+}
+.productConteiner{
+  margin-top: 300px;
+}
+} 
+@media screen and (max-width: 680px){
+  .cart{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  .linkList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .productList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .productConteiner{
+    align-items: center;
+    gap: 10px;
+  }
+  .listTitle{
+    margin-bottom: 20px;
+  }
+  .footerConteiner h4{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .footerConteiner div{
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: 15px;
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  } 
