@@ -9,7 +9,7 @@
 }
 .mainConteiner{
   position: relative;
-  height: fit-content;
+  height: 155vh;
   display: flex;
   flex-direction: column;
   align-items: center;
