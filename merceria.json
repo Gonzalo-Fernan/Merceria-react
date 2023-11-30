@@ -2,7 +2,7 @@
     {
        "id": 1,
        "nombre": "Tijeras",
-       "thumbnail": "../src/assets/images/tijeras2-sinFondo.png",
+       "thumbnail": "public/tijeras2-sinFondo.png",
        "precio": 9500,
        "descripcion":"Tijera metalicas para tela" 
     },
