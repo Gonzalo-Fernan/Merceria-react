@@ -1,4 +1,4 @@
-import { useFetch } from '../../useFetch'
+import { useFetch } from '../../useFetch' 
 
 
 export function ProductList(){
@@ -8,8 +8,8 @@ export function ProductList(){
         <section className='productConteiner flex flex-col items-start justify-start mt-1'>
             <p className='listTitle font-bold text-2xl text-white'>Destacados de esta semana</p>
             <ul className='productList max-w-6xl flex flex-wrap gap-14 mt-8'>
-                
-                {data?.map((producto)=>(
+                {/* map para recorrer los datos del fetch y crear las cards con los datos del json */}
+                {data?.map((producto)=>( 
                     <li key={producto.id} className='cardConteiner flex flex-col gap-2 items-center justify-start w-60  text-blue-100'>
                         <img className='imagenProducto' src={producto.thumbnail} />
                         <h2 className='text-2xl font-bold'>{producto.nombre}</h2>
