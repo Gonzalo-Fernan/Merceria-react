@@ -2,7 +2,7 @@ import { useFetch } from '../../useFetch'
 
 
 export function ProductList(){
-    const { data } = useFetch("../../merceria.json")
+    const { data } = useFetch("../../../merceria.json")
 
     return(
         <section className='productConteiner flex flex-col items-start justify-start mt-1'>
