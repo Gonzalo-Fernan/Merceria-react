@@ -65,7 +65,7 @@
    {
       "id": 10,
       "nombre": "Alfiler de Gancho",
-      "thumbnail": "../src/assets/images/alfileresGancho-sinFondo.png",
+      "thumbnail": "alfileresGancho-sinFondo.png",
       "precio": 1500,
       "descripcion":"Caja de 25 alfileres" 
    }
