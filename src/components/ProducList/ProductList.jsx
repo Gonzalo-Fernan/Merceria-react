@@ -1,8 +1,12 @@
+
 import { useFetch } from '../../useFetch' 
 
 
 export function ProductList(){
     const { data } = useFetch("merceria.json")
+
+    
+ 
 
     return(
         <section className='productConteiner flex flex-col items-start justify-start mt-1'>
@@ -23,6 +27,9 @@ export function ProductList(){
 
 }
 
+
+
+
 /* Aca dejo como seria con los props, queria probar con el fetch del json 
 
 export const ProductList = ( {key, nombre, thumbnail, descripcion} ) =>{
@@ -37,9 +44,7 @@ export const ProductList = ( {key, nombre, thumbnail, descripcion} ) =>{
                 </li> 
         </ul>
     )
-}*/
-
-
-
+}
+ */
 
 
