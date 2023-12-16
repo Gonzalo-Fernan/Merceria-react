@@ -1,0 +1,38 @@
+[
+   {
+       "id": 1,
+       "marca": "Singer",
+       "modelo": "Florencia64",
+       "thumbnail": "singer-florencia-sinFondo.png",
+       "precio": 380000,
+       "descripcion":"Maquina recta de coser overlock, ojal en 4 pasos, hilvanado automatico",
+       "categoria": "industrial" 
+    },
+    {
+        "id": 2,
+        "marca": "Godeco",
+        "modelo": "Velvet",
+        "thumbnail": "godeco-velvet-sinFondo.png",
+        "precio": 354000,
+        "descripcion":"Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+        "categoria": "industrial" 
+     },
+     {
+        "id": 3,
+        "marca": "Singer",
+        "modelo": "M3305C",
+        "thumbnail": "singer-sinFondo.png",
+        "precio": 354000,
+        "descripcion":"Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+        "categoria": "familiar"  
+     },
+     {
+      "id": 4,
+      "marca": "Janome",
+      "modelo": "3112PK",
+      "thumbnail": "Janome-pk-sinFondo.png",
+      "precio": 356000,
+      "descripcion":"Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+      "categoria": "familiar"  
+     }
+ ]

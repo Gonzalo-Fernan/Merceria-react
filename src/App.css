@@ -15,9 +15,9 @@
   align-items: center;
   justify-content: center;
   background-image: url(../images/fondo-merce.png);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+ 
 }
 
 
@@ -84,22 +84,24 @@
 
 /*--------MAIN (ProductList)----------*/
 .productList{
-  height: 50vh;
+  padding: 20px;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 }
-
 .listTitle{
   font-family: montserrat;
 }
 .imagenProducto{
   object-fit: contain;
-  width: 80%;
-  height: 70%;
+  width: 200px;
+  height: 200px;
   border-radius: 10px 10px 0px 0px;
 }
 .cardConteiner{
+  background-color: #000000a1;
   padding: 30px;
   border-radius: 15px;
   transition: .3s;
@@ -108,10 +110,31 @@
   transform: scale(1.11);
   background-color: #000000a1;
 }
-.productConteiner{
-  margin: 50px;
+
+/*------ LOGIN ------ */
+.loginConteiner{
+  background-color: #000000b2;
+  border-radius: 30px;
+  padding: 20px;
 }
-.slider{
+/*------ SLIDER ------ */
+
+.cardConteinerSlider{
+  padding: 30px;
+  border-radius: 15px;
+  transition: .3s;
+}
+.cardConteinerSlider:hover{
+  transform: scale(1.15);
+}
+.productListSlider{
+  padding: 20px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .slider{
   padding: auto;
   display: flex;
   align-items: center;
@@ -123,7 +146,6 @@
   width: 50px;
   height: 50px;
 }
-
 /*------ FOOTER ------ */
 
 .footerConteiner{
