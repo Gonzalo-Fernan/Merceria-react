@@ -2,71 +2,122 @@
     {
        "id": 1,
        "nombre": "Tijeras",
-       "thumbnail": "tijeras2-sinFondo.png",
+       "thumbnail": "/Merceria-react/tijeras2-sinFondo.png",
        "precio": 9500,
+       "categoria": "merceria",
        "descripcion":"Tijera metalicas para tela" 
     },
     {
        "id": 2,
        "nombre": "Corta Hilachas",
-       "thumbnail": "cortaHilacha2-sinFondo.png",
+       "thumbnail": "/Merceria-react/cortaHilacha2-sinFondo.png",
        "precio": 3200,
+       "categoria": "merceria",
        "descripcion":"Variedad de colores" 
     },
     {
       "id": 3,
       "nombre": "Centimetro",
-      "thumbnail": "centimetro-sinFondo.png",
+      "thumbnail": "/Merceria-react/centimetro-sinFondo.png",
       "precio": 2500,
+      "categoria": "merceria",
       "descripcion":"1.5 metros varios colores" 
    },
    {
       "id": 4,
       "nombre": "Alfileres",
-      "thumbnail": "alfileres-sinFondo.png",
+      "thumbnail": "/Merceria-react/alfileres-sinFondo.png",
       "precio": 1500,
+      "categoria": "merceria",
       "descripcion":"Caja de 25 alfileres" 
    },
    {
       "id": 5,
       "nombre": "Regla",
-      "thumbnail": "regla-sinFondo.png",
+      "thumbnail": "/Merceria-react/regla-sinFondo.png",
       "precio": 2800,
+      "categoria": "merceria",
       "descripcion":"Regla madera 1 metro" 
    },
    {
       "id": 6,
       "nombre": "Cierre",
-      "thumbnail": "cierre2-sinFondo.png",
+      "thumbnail": "/Merceria-react/cierre2-sinFondo.png",
       "precio": 2500,
+      "categoria": "merceria",
       "descripcion":"Todos los colores disponibles" 
    },
    {
       "id": 7,
       "nombre": "Agujas",
-      "thumbnail": "agujas-sinFondo.png",
+      "thumbnail": "/Merceria-react/agujas-sinFondo.png",
       "precio": 2500,
+      "categoria": "merceria",
       "descripcion":"10 agujas de coser" 
    },
    {
       "id": 8,
       "nombre": "Elastico",
-      "thumbnail": "elastico-sinFondo.png",
+      "thumbnail": "/Merceria-react/elastico-sinFondo.png",
       "precio": 2000,
+      "categoria": "merceria",
       "descripcion":"Colores varios" 
    },
    {
       "id": 9,
       "nombre": "Cono de hilo",
-      "thumbnail": "conoHilo-sinFondo.png",
+      "thumbnail": "/Merceria-react/conoHilo-sinFondo.png",
       "precio": 1800,
+      "categoria": "merceria",
       "descripcion":"Gran variedad de colores" 
    },
    {
       "id": 10,
       "nombre": "Alfiler de Gancho",
-      "thumbnail": "alfileresGancho-sinFondo.png",
+      "thumbnail": "/Merceria-react/alfileresGancho-sinFondo.png",
       "precio": 1500,
+      "categoria": "merceria",
       "descripcion":"Caja de 25 alfileres" 
-   }
+   },
+   {
+      "id": 11,
+      "marca": "Singer",
+      "modelo": "Florencia64",
+      "thumbnail": "/Merceria-react/singer-florencia-sinFondo.png",
+      "precio": 380000,
+      "descripcion": "Maquina recta de coser overlock, ojal en 4 pasos, hilvanado automatico",
+      "categoria": "maquina",
+      "tipo": "collareta"
+  },
+  {
+      "id": 12,
+      "marca": "Godeco",
+      "modelo": "Velvet",
+      "thumbnail": "/Merceria-react/godeco-velvet-sinFondo.png",
+      "precio": 354000,
+      "descripcion": "Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+      "categoria": "maquina",
+      "tipo": "remalladora"
+  },
+  {
+      "id": 13,
+      "marca": "Singer",
+      "modelo": "M3305C",
+      "thumbnail": "/Merceria-react/singer-sinFondo.png",
+      "precio": 354000,
+      "descripcion": "Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+      "categoria": "maquina",
+      "tipo": "industrial"
+      
+  },
+  {
+      "id": 14,
+      "marca": "Janome",
+      "modelo": "3112PK",
+      "thumbnail": "/Merceria-react/Janome-pk-sinFondo.png",
+      "precio": 356000,
+      "descripcion": "Cose recto, en zig zag, zig zag múltiple, puntada invisible y ojal, además borde el festón.",
+      "categoria": "maquina",
+      "tipo": "familiar"
+  }
  ]
