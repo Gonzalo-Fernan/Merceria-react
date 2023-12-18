@@ -1,13 +1,14 @@
-import { useParams } from "react-router-dom";
+
 import { useFetch } from "../../useFetch";
+import { AsideCategoryMenu } from "../AsideCategoryMenu/AsideCategoryMenu";
+import { Link, useParams } from "react-router-dom";
+
 
 export const Maquinas = () => {
-    const { data } = useFetch("maquinas.json")
-    
-    const param = useParams()
-    const { categoria } = useParams()
-
+    const { data } = useFetch("/Merceria-react/merceria.json")
+  
     return(
+        <>
         <section className="mt-10">
             <h2 className="text-white text-3xl font-bold">Maquinas de Coser</h2>
             <article>
@@ -19,12 +20,16 @@ export const Maquinas = () => {
                             <p>{producto.modelo}</p>
                             <p>{producto.categoria}</p>
                             <p>{producto.descripcion}</p>
-                            <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>
+                            <Link to={`/Merceria-react/catalogo/${producto.id}`}>
+                                <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>
+                            </Link>  
                         </li>
                     ))}  
                 </ul>
             </article>
         </section>
+        {/* <AsideCategoryMenu/> */}
+        </>
     )
 }
 

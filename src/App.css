@@ -83,7 +83,9 @@
 }
 
 /*--------MAIN (ProductList)----------*/
+
 .productList{
+  width: 1200px;
   padding: 20px;
   height: 60vh;
   display: flex;
@@ -118,6 +120,11 @@
   padding: 20px;
 }
 /*------ SLIDER ------ */
+.welcome{
+  padding: 10px;
+  background-color: #000000a8;
+  border-radius: 20px;
+}
 
 .cardConteinerSlider{
   padding: 30px;
@@ -128,8 +135,7 @@
   transform: scale(1.15);
 }
 .productListSlider{
-  padding: 20px;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +152,34 @@
   width: 50px;
   height: 50px;
 }
+/*------ ASIDECATEGORYMENU ------ */
+.asideConteiner{
+  flex-direction: row;
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  transition: 0.5s;
+}
+
+.link{
+  background-color: #000000a1;
+}
+.link:hover{
+  scale: 1.15;
+}
+
+/*--------------ProductDETAIL-------------------*/
+.productDetailConteiner{
+  width: 50%;
+  background-color: #000000a8;
+  border-radius: 30px;
+  padding: 50px;
+}
+
+
+
+
+
 /*------ FOOTER ------ */
 
 .footerConteiner{

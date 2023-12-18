@@ -1,6 +1,8 @@
 
 import { useFetch } from '../../useFetch' 
-import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+
 
 export function ProductList(){
     const { data } = useFetch("merceria.json")
@@ -18,7 +20,9 @@ export function ProductList(){
                         <h2 className='text-2xl font-bold'>{producto.nombre}</h2>
                         <p>Envio Gratis</p>
                         <p>{producto.descripcion}</p>
-                        <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>
+                        <Link to={`/Merceria-react/catalogo/${producto.id}`}>
+                            <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>
+                        </Link>                  
                     </li>
                 ))}  
             </ul>
