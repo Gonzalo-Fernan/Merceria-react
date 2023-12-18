@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { ProductDetail } from "../ProductDetail/ProductDetail"
 
 
@@ -22,6 +22,7 @@ export const ProductDetailConteiner = () =>{
 
     return(
         <section className="productDetailConteiner">
+            <Link to={"/Merceria-react/"}><button className="text-white font-bold text-2xl w-28 h-13 bg-sky-700 rounded-lg p-2">Volver</button></Link>
             <ProductDetail item={producto}/>
         </section>
     )
