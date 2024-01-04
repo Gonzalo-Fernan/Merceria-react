@@ -22,7 +22,7 @@ export const ProductDetailConteiner = () =>{
 
     return(
         <section className="productDetailConteiner">
-            <Link to={"/Merceria-react/"}><button className="text-white font-bold text-2xl w-28 h-13 bg-sky-700 rounded-lg p-2">Volver</button></Link>
+            <Link to={"/Merceria-react/"}><button className="volver text-white font-bold text-2xl w-28 h-13 bg-sky-700 rounded-lg p-2">Volver</button></Link>
             <ProductDetail item={producto}/>
         </section>
     )

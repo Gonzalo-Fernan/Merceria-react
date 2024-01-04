@@ -7,12 +7,46 @@ import { Link } from 'react-router-dom';
 export const ProductSlider = () =>{
     const { data } = useFetch("merceria.json")
 
-    const settings = {
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1
+    //   };
+    var settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
 
     return(
@@ -26,7 +60,7 @@ export const ProductSlider = () =>{
                 
                     <Slider className='slider' {...settings}>
                         {data?.map((producto)=>( 
-                            <li key={producto.id} className='cardConteinerSlider flex  gap-2 items-center justify-center text-blue-100'>
+                            <li key={producto.id} className='cardConteinerSlider flex items-center justify-center text-blue-100'>
                                 <img className='imagenProducto' src={producto.thumbnail} />
                                 <h2 className='text-2xl font-bold'>{producto.nombre}</h2>
                                 <p>Envio Gratis</p>

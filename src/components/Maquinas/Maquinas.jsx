@@ -10,7 +10,7 @@ export const Maquinas = () => {
     return(
         <>
         <section className="mt-10">
-            <h2 className="text-white text-3xl font-bold">Maquinas de Coser</h2>
+            <h2 className="tituloMaquinas text-white text-3xl font-bold">Maquinas de Coser</h2>
             <article>
                 <ul className='productList max-w-6xl flex flex-wrap flex-row-reverse gap-14 mt-8'>
                     { data?.map((producto)=>( 
@@ -18,7 +18,6 @@ export const Maquinas = () => {
                             <img className='imagenProducto' src={producto.thumbnail} />
                             <h2 className='text-2xl font-bold'>{producto.marca}</h2>
                             <p>{producto.modelo}</p>
-                            <p>{producto.categoria}</p>
                             <p>{producto.descripcion}</p>
                             <Link to={`/Merceria-react/catalogo/${producto.id}`}>
                                 <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>

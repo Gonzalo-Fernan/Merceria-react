@@ -11,14 +11,15 @@ export function ProductList(){
 
     return(
         <section className='productConteiner flex flex-col items-center justify-start mt-1'>
-            <input className='rounded-md w-96 h-9 pl-3 bg-opacity-70 mt-28' type="text" placeholder='Busca tus productos aqui...' />
+            <input className='buscar rounded-md w-96 h-9 pl-3 bg-opacity-70 mt-28' type="text" placeholder='Busca tus productos aqui...' />
             <ul className='productList max-w-6xl flex flex-wrap flex-row-reverse gap-14 mt-8'>
                 {/* map para recorrer los datos del fetch y crear las cards con los datos del json */}
                 {data?.map((producto)=>( 
                     <li key={producto.id} className='cardConteiner flex flex-col gap-2 items-center justify-start w-60  text-blue-100'>
                         <img className='imagenProducto' src={producto.thumbnail} />
                         <h2 className='text-2xl font-bold'>{producto.nombre}</h2>
-                        <p>Envio Gratis</p>
+                        <h3>{producto.marca}</h3>
+                        <h4>{producto.modelo}</h4>
                         <p>{producto.descripcion}</p>
                         <Link to={`/Merceria-react/catalogo/${producto.id}`}>
                             <button className='w-20 h-10 bg-slate-800 rounded-md p-2'>Ver mas</button>

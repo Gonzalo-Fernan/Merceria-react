@@ -16,7 +16,7 @@
   justify-content: center;
   background-image: url(../images/fondo-merce.png);
   background-size: cover;
-  background-position: center center;
+  background-position: center center;  
  
 }
 
@@ -28,7 +28,6 @@
   position: absolute;
   top: 0;
   color: rgb(255, 255, 255);
-
 }
 .logo{
   padding: 5px;
@@ -57,18 +56,19 @@
 }
 .cartConteiner:hover{
   border-radius: 15px;
-  padding: 4px;
+  padding: 2px;
   background-color: #0000004d;
   transform: scale(1.11);
 }
 .cartList{
+  font-weight: normal;
   text-align: start;
   padding: 15px;
   font-size: medium;
   position: fixed;
-  width: 300px;
+  width: fit-content;
   height: 500px;
-  background-color: #000000a8;
+  background-color: #000000cb;
   top: 140px;
   right: 30px;
   border-radius: 30px;
@@ -83,6 +83,19 @@
 }
 
 /*--------MAIN (ProductList)----------*/
+
+.landingConteiner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  height: 800px;
+  /* background-image: url(/mat-sinFondo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+  background-size: contain; */
+}
 
 .productList{
   width: 1200px;
@@ -113,13 +126,22 @@
   background-color: #000000a1;
 }
 
+
+
 /*------ LOGIN ------ */
+
 .loginConteiner{
   background-color: #000000b2;
   border-radius: 30px;
   padding: 20px;
+  width: 880px;
 }
+
+
+
 /*------ SLIDER ------ */
+
+
 .welcome{
   padding: 10px;
   background-color: #000000a8;
@@ -152,7 +174,11 @@
   width: 50px;
   height: 50px;
 }
+
+
+
 /*------ ASIDECATEGORYMENU ------ */
+
 .asideConteiner{
   flex-direction: row;
   position: fixed;
@@ -167,6 +193,8 @@
 .link:hover{
   scale: 1.15;
 }
+
+
 
 /*--------------ProductDETAIL-------------------*/
 .productDetailConteiner{
@@ -186,57 +214,144 @@
   position: absolute;
   bottom: 0; 
   background-color: #000000b2;
+  height: 80px;
 }
 
+
+
+
 /*--------MediaQuerys------*/
+
+
+
+
+@media screen and (max-width: 1500px){
+  .productConteiner{
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome{
+    width: 80%;
+  }
+} 
  
 @media screen and (max-width: 1400px){
   .linkList{
     gap: 5px;
     margin-right: -15px;
   }
+  .productList{
+    width: 800px;
+  }
+  .agregarCarrito{
+    width: 100%;
+  }
+  .terminarCompra{
+    width: 100%;
+  }
+  .descripcionDetail{
+    width: 50%;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .detailConteiner{
+    width: 100%;
+  }
+  .detailConteiner img{
+    width: 50%;
+    height: 50%;
+  }
+  .descripcion{
+    width: 80%;
+    font-size: 20px;
+  }
+
+
 } 
 @media screen and (max-width: 1200px){
   .productConteiner{
     margin: 100px;
   }
-} 
+  .logo img{
+    margin-right: 45px;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000071;
+    padding: 0;
+    
+  }
+  .logo{
+    align-items: start;
+    height: 100px;
+  }
+  .tituloMaquinas{
+    margin-top: 60px;
+  }
+  .volver{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    padding: 0;
+  }
+  .productDetailConteiner{
+    margin-top: 80px;
+  }
+
+ } 
+
 @media screen and (max-width: 1120px){
   .logo{
     display: inline-block;
   }
-  .logo img{
-    margin-left: 60px;
-    margin-bottom: -30px;
-  }
 } 
-@media screen and (max-width: 1050px){
- .linkList{
-  flex-direction: column;
- }
- .logo{
-  margin-top: -190px;
- }
- .productList{
-  margin-top: -90px;
-  display: grid;
-  grid-template-columns: auto auto;
- }
- .listTitle{
-  margin-top: -220px;
-  margin-bottom: 150px;
- }
 
-} 
+@media screen and (max-width: 1050px){
+  .linkList{
+   flex-direction: row;
+  }
+  .productList{
+    width: 600px;
+  }
+  .ContactConteiner form h2{
+    font-size: 22px;
+  }
+
+ 
+ } 
+
+ @media screen and (max-width: 950px){
+  .mainConteiner{
+    height: 100vh;
+  }
+  .loginConteiner{
+    margin-top: 80px;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .titleRegister{
+    font-size: 18px;
+    width: 384px;
+  }
+  .loginform{
+    width: 100%;
+    gap: 0;
+
+  }
+  .descripcion{
+    font-size: 14px;
+    width: 100%;
+  }
+ } 
+
 @media screen and (max-width: 850px){
-.navbar{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #00000071;
-}
+
 .linkList{
-  margin-top: 30px;
   flex-direction: row;
   font-size: 20px;  
 }
@@ -246,55 +361,250 @@
     margin: 0;
 }
 .logo img{
+  margin-top: 40px;
   margin-right: 45px;
 }
-.productConteiner{
-  margin-top: 300px;
+.cart{
+  width: 50px;
+  height: 50px;
 }
+.productList{
+  width: 500px;
+}
+.cardConteiner{
+  width: 10rem;
 } 
-@media screen and (max-width: 680px){
-  .mainConteiner{
-    position: relative;
-    background-image: url(../images/fondo-merce.png);
-    background-repeat: repeat;
-    background-size: auto;
-    background-position: center center;
-   
-  }
+.cardConteiner{
+  font-size: 16px;
+} 
+.cardConteiner p{
+  font-size: 12px;
+}
+.imagenProducto{
+  width: 100%;
+  height: 100%;
+}
+.footerConteiner h4{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.footerConteiner div{
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: 15px;
+}
+.productDetailConteiner{
+  width: 80%;
+}
+.descripcion{
+  width: 70%;
+}
+
+} 
+@media screen and (max-width: 720px){
   .cart{
     position: fixed;
     top: 20px;
     right: 20px;
+    width: 50px;
+    height: 55px;
   }
   .linkList{
+    font-size: 16px;
     display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+   
+    justify-content: space-around;
   }
   .productList{
-    display: flex;
+    width: 400px;
+  }
+  .cardConteiner{
+    width: 16rem;
+  }  
+  .loginConteiner{
+    width: 90%;
+  }
+  .ContactConteiner form h2{
+    font-size: 18px;
+  }
+  .descripcion{
+    width: 100%;
+  }
+
+} 
+@media screen and (max-width: 640px){
+ 
+ .productConteiner{
+  margin: 0;
+ }
+ 
+
+} 
+
+@media screen and (max-width: 550px){
+  .navbar ul{
+    font-size: 12px;
+  }
+  .cart{
+    width: 50px;
+    height: 50px;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+    margin-right: 0px;
+  }
+  .logo img{
+    width: 60px;
+    height: 80px;
+  }
+  .logo h1{
+    font-size: 16px;
+  } 
+  .linkList{
+   display: flex;
+   gap: 10px;
+   margin-right: 0px;
+  }
+  .nav-element{
+    padding: 0px;
+  }
+  .ContactConteiner form h2{
+    font-size: 16px;
+    width: 80%;
+  }
+  .detailConteiner{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
   }
-  .productConteiner{
+  .agregarCarrito{
+    width: 100%;
+  }
+  .terminarCompra{
+    width: 100%;
+  }
+
+  .detailConteiner{
+    width: 100%;
+  }
+  .descripcionDetail{
+    width: 100%;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
   }
-  .listTitle{
-    margin-bottom: 20px;
+  .descripcion{
+    width: 100%;
   }
-  .footerConteiner h4{
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
+  .cantidadPicker{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  .footerConteiner div{
-    flex-direction: column;
-    margin-left: -10px;
-    margin-right: 15px;
+  .cantidadPicker button{
+    width: 40%;
+  }
+  .volver{
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .nombreProduct{
+    font-size: 20px;
+  }
+  .marcaProduct{
+    font-size: 20px;
+  }
+  .modeloProduct{
+    font-size: 20px;
+  }
+  .productDetailConteiner{
+    margin-top: 20px;
   }
 } 
-
+@media screen and (max-width: 470px){
+  .tituloIniciar{
+    font-size: 20px;
+  } 
+  .log{
+    width: 95%;
+  }
+  .hr{
+    width: 95%;
+  }
+  .name{
+    width: 95%;
+  }
+  .password{
+    width: 95%;
+  }
+  .iniciarSesion{
+    width: 95%;
+  }
+  .registerConteiner{
+    width: 100%;
+  }
+  .titleRegister{
+    width: 95%;
+    font-size: 15px;
+  }
+  .registerFrom{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .email{
+    width: 95%;
+  }
+  .phone{
+    width: 95%;
+  }
+  .nameRegister{
+    width: 95%;
+  }
+  .registrar{
+    width: 95%;
+  }
+  .google{
+    width: 95%;
+    font-size: 18px;
+  }
+  .buscar{
+    width: 80%;
+  }
+  
+} 
+@media screen and (max-width: 420px){
+  .productList{
+    width: 250px;
+  }
+  .ContactConteiner{
+    width: 100%;
+  }
+  .ContactConteiner form input{
+    width: 80%;
+  }
+  .ContactConteiner form button{
+    width: 80%;
+  }
+} 
+@media screen and (max-width: 400px){
+  .navbar{
+    padding: 0%;
+    padding-top: 30px;
+  }
+  
+  .nav-element{
+    padding: 0;
+    margin: 0;
+    font-size: 9px;
+  }
+  .productDetailConteiner{
+    margin-top: 80px;
+  }
+  
+} 
