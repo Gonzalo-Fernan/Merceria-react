@@ -6,14 +6,6 @@ import { Link } from 'react-router-dom';
 
 export const ProductSlider = () =>{
     const { data } = useFetch("merceria.json")
-
-    // const settings = {
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1
-    //   };
     var settings = {
         dots: false,
         infinite: false,

@@ -1,7 +1,6 @@
 import { ShoppingCart } from "../ShoppingCart/ShoppingCart"
 import { Link } from "react-router-dom"
 
-
 export function Navbar() {
     return (
         <nav className="navbar flex w-full h-15 p-10 item-center justify-between">

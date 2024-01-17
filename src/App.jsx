@@ -9,6 +9,8 @@ import { Catalogo } from './components/Catalogo/Catalogo.jsx'
 import { ProductDetailConteiner } from './components/ProductDetailConteiner/ProductDetailConteiner.jsx'
 import { CartProvider } from './components/context/CartContext.jsx'
 import { Landing } from './components/Landing/Landing.jsx'
+import { ProductList } from './components/ProducList/ProductList.jsx'
+import { Checkout } from './components/Checkout/Checkout.jsx'
 
 
 function App() {
@@ -24,13 +26,14 @@ function App() {
           <Navbar/>
 
           <Routes>
-            {/* <Route path='/Merceria-react/' element={<Landing/>} /> */}
+            <Route path='/Merceria-react/' element={<Landing/>} /> 
             <Route path='/Merceria-react/iniciar-sesion' element={<LoginRegister />} />
             <Route path='/Merceria-react/contacto' element={<Contact />} />
-            <Route path='/Merceria-react/catalogo' element={<Catalogo />} />
+            <Route path='/Merceria-react/catalogo' element={<ProductList />} />
             <Route path='/Merceria-react/catalogo/:itemId' element={<ProductDetailConteiner />} />
             <Route path='/Merceria-react/:categoria' element={<Maquinas />} />
-            <Route path='/Merceria-react/:categoria/:tipo' element={<Maquinas />} />
+            <Route path='/Merceria-react/checkout' element={<Checkout/>} /> 
+          
             <Route path='*' element={<Navigate to={'/'} />} />
           </Routes>
             
