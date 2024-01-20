@@ -43,8 +43,8 @@ export const Checkout = () =>{
     if (orderId) {
         return(
             <article className="orderConteiner flex flex-col gap-5 text-white bg-slate-950 p-10 rounded-xl">
-                <h2 className="text-5xl">Tu compra se realizó tu compra con exito</h2>
-                <h3 className="text-2xl" >Gracias por confiar en nosotros</h3>
+                <h2 className="text-5xl">Tu compra se realizó con exito</h2>
+                <h3 className="text-2xl" >Gracias por confiar en nosotros.</h3>
                 <p className="font-semibold">Tu identificador de orden es: {orderId}</p>
                 <Link to={"/Merceria-react/catalogo"}><button className="h-10 bg-blue-800 rounded-md p-2 text-white w-80">Volver al catalogo</button></Link>
             </article>

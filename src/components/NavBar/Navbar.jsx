@@ -11,9 +11,9 @@ export function Navbar() {
                 </Link>
             </div>
             <ul className="linkList flex gap-9 text-2xl items-center justify-center mr-14">
-                <Link to={"/Merceria-react/iniciar-sesion"} className="nav-element"><button >Iniciar Sesion</button></Link>
-                <Link to={"/Merceria-react/catalogo"} className="nav-element"><button>Catalogo</button></Link>
-                <Link to={"/Merceria-react/maquina"} className="nav-element"><button>Maquinas</button></Link>
+                <Link to={"/Merceria-react/iniciar-sesion"} className="nav-element"><button >Iniciar Sesión</button></Link>
+                <Link to={"/Merceria-react/catalogo"} className="nav-element"><button>Catálogo</button></Link>
+                <Link to={"/Merceria-react/maquina"} className="nav-element"><button>Máquinas</button></Link>
                 <Link to={"/Merceria-react/contacto"} className="nav-element"><button>Contacto</button></Link>
                 <ShoppingCart/>
             </ul>

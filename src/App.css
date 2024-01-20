@@ -44,6 +44,7 @@
 }
 .nav-element{
   padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav-element:hover{
   padding: 10px;
@@ -108,7 +109,7 @@
   overflow-y: scroll;
 }
 .listTitle{
-  font-family: montserrat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .imagenProducto{
   object-fit: contain;
